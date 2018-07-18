@@ -195,9 +195,9 @@ body {
     .store .board-gallery.owl-carousel .owl-dots {
       margin: 0px;
       width: 100%;
-      -webkit-transform: translateY(-100px);
-      -ms-transform: translateY(-100px);
-      transform: translateY(-100px); }
+      -webkit-transform: translateY(-120px);
+      -ms-transform: translateY(-120px);
+      transform: translateY(-120px); }
       .store .board-gallery.owl-carousel .owl-dots .owl-dot {
         border: 1px solid gray;
         margin: 0px 2px;
@@ -697,7 +697,8 @@ footer {
     transform: translateY(-80px); }
   .boxas .newsletter {
     width: 90%;
-    margin: 0px; }
+    margin: 0px;
+    margin-bottom: 20px; }
     .boxas .newsletter h2 {
       font-size: 20px; }
     .boxas .newsletter .email-input {

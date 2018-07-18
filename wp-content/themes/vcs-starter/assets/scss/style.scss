@@ -213,7 +213,7 @@ $mainColor: #00b0ff;
         .owl-dots{
             margin: 0px;
             width: 100%;
-            transform: translateY(-100px);
+            transform: translateY(-120px);
             .owl-dot{
                 border: 1px solid gray;
                 margin: 0px 2px;
@@ -314,7 +314,7 @@ $mainColor: #00b0ff;
         }
     }
     .owl-nav, .owl-nav.owl-next, .owl-nav.owl-prev{
-            display: none;
+        display: none;
     }
     .icon-arrow-left2,.icon-arrow-right2{
         color:#0022ff;
@@ -633,194 +633,195 @@ footer {
     margin-right: 20px;
   }
 
-  @media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
-    .nav-list, .menu, .social-icons{
-        position: absolute;
-        right: 0;
+.nav-list, .menu, .social-icons{
+    position: absolute;
+    right: 0;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.nav-list.show, .menu.show .social-icons.show{
+    display: block;
+}
+
+.nav-bar .burger{
+    display: block;
+    text-align: right;
+}
+
+.logo{
+    padding-left: 20px;
+    align-self: center;
+}
+
+.nav-bar ul {
+    text-align: right;
+    align-self: flex-end;
+    margin: 20px 20px 0px 0px;
+    padding: 20px 30px 10px 30px;
+    background-color: $mainColor;
+}
+
+.nav-bar li {
+    height: 40px;
+    a{
+        font-size: 20px;
+    }
+}
+.nav-bar{
+    position: absolute;
+    width: 100%;
+}
+.title{
+    margin: 200px auto;
+}
+
+.gallery, .store, .bg .container, .social{
+    flex-wrap: wrap;
+}
+
+.store{
+    width: 90%;
+    .board-gallery.owl-carousel{
+        //width: 80%;
+        margin: 35px;
+        width: 90%;
+    }
+    .board-info{
+        min-width: 90%;
+    }
+}
+
+.instagram{
+    padding: 0px 4px;
+}
+
+.about-us .container{
+    justify-content: center;
+    align-items: center;
+    .left{
+        width: 100%;
+    }
+    .right{
+        width:80%;
+    }
+    iframe{
+        width: 500px;
+        height: 300px;
+        margin: 0px auto;
+    }
+}
+
+#team{
+    .owl-nav{
         display: none;
+    }
+}
+
+.social{
+    justify-content: center;
+    align-items: center;
+    .left{
+        max-height:900px;
+    }
+}
+
+.social .right, .social .right .facebook{
+    margin: 40px auto 20px;
+    width: 100%;
+}
+
+footer .boxas{
+    align-items: center;
+    justify-content: center;
+    .panel{
+        margin: 45px 10px 0px 10px;
+        p{
+            font-size: 17px;
+        }
+    }
+}
+
+}
+
+@media screen and (max-width: 576px) {
+
+.about-us-letters{
+    height: 150px;
+}
+
+.store{
+    .board-info{
+        padding: 25px;
+    }
+    .section{
         flex-wrap: wrap;
+        width: 100%;
     }
+}
 
-    .nav-list.show, .menu.show .social-icons.show{
-        display: block;
+.nav-bar .burger{
+    display: block;
+    text-align: right;
+}
+
+#hero.owl-dot{
+    transform: translateY(-80px); 
+}
+
+.boxas {
+    .newsletter{
+        width: 90%;
+        margin: 0px;
+        margin-bottom: 20px;
+        h2{
+            font-size: 20px;
+        }
+        .email-input{
+            font-size: 18px;
+        }
+        .email-submit{
+            width: 43px;
+            min-width: 43px; // vel blogai, jei be dvieju width
+            height: 43px;
+        }
     }
-
-    .nav-bar .burger{
-        display: block;
-        text-align: right;
+    .icon-envelop{
+        padding-top: 10px;
+        font-size: 25px;
     }
-
-    .logo{
-        padding-left: 20px;
-        align-self: center;
+    .icon-arrow-right2{
+        font-size: 24px;
     }
     
-    .nav-bar ul {
-      text-align: right;
-      align-self: flex-end;
-      margin: 20px 20px 0px 0px;
-      padding: 20px 30px 10px 30px;
-      background-color: $mainColor;
+    .input-form{
+        width: 100%;
     }
-
-    .nav-bar li {
-        height: 40px;
-        a{
+    .panel{
+        padding: 0px 20px;
+        width: 100%;
+        max-height: 200px;
+        .list-item{
+            margin: 0px 0px 25px 0px;
+        }
+        p,.menu-item a{
             font-size: 20px;
         }
     }
-    .nav-bar{
-        position: absolute;
-        width: 100%;
-    }
-    .title{
-        margin: 200px auto;
-    }
+}
 
-    .gallery, .store, .bg .container, .social{
-        flex-wrap: wrap;
-    }
+.team{
+    min-height: 500px;
+}
 
-    .store{
-        width: 90%;
-        .board-gallery.owl-carousel{
-            //width: 80%;
-            margin: 35px;
-            width: 90%;
-        }
-        .board-info{
-            min-width: 90%;
-        }
-    }
+.owl-next,.owl-prev{
+    display: none;
+}
 
-    .instagram{
-        padding: 0px 4px;
-    }
-
-    .about-us .container{
-        justify-content: center;
-        align-items: center;
-        .left{
-            width: 100%;
-        }
-        .right{
-            width:80%;
-        }
-        iframe{
-            width: 500px;
-            height: 300px;
-            margin: 0px auto;
-        }
-    }
-
-    #team{
-        .owl-nav{
-            display: none;
-        }
-    }
-
-    .social{
-        justify-content: center;
-        align-items: center;
-        .left{
-            max-height:900px;
-        }
-    }
-    
-    .social .right, .social .right .facebook{
-        margin: 40px auto 20px;
-        width: 100%;
-    }
-
-    footer .boxas{
-        align-items: center;
-        justify-content: center;
-        .panel{
-            margin: 45px 10px 0px 10px;
-            p{
-                font-size: 17px;
-            }
-        }
-    }
-    
-  }
-
-  @media screen and (max-width: 576px) {
-
-    .about-us-letters{
-        height: 150px;
-    }
-
-    .store{
-        .board-info{
-            padding: 25px;
-        }
-        .section{
-            flex-wrap: wrap;
-            width: 100%;
-        }
-    }
-
-    .nav-bar .burger{
-        display: block;
-        text-align: right;
-    }
-
-    #hero.owl-dot{
-        transform: translateY(-80px); 
-    }
-
-    .boxas {
-        .newsletter{
-            width: 90%;
-            margin:  0px;
-            h2{
-                font-size: 20px;
-            }
-            .email-input{
-                font-size: 18px;
-            }
-            .email-submit{
-                width: 43px;
-                min-width: 43px; // vel blogai, jei be dvieju width
-                height: 43px;
-            }
-        }
-        .icon-envelop{
-            padding-top: 10px;
-            font-size: 25px;
-        }
-        .icon-arrow-right2{
-            font-size: 24px;
-        }
-        
-        .input-form{
-            width: 100%;
-        }
-        .panel{
-            padding: 0px 20px;
-            width: 100%;
-            max-height: 200px;
-            .list-item{
-                margin: 0px 0px 25px 0px;
-            }
-            p,.menu-item a{
-                font-size: 20px;
-            }
-        }
-    }
-
-    .team{
-        min-height: 500px;
-    }
- 
-    .owl-next,.owl-prev{
-        display: none;
-    }
- 
-    .instagram-letters{
-        font-size: 15vw;
-        transform: translateY(20px);
-    }
-  }
+.instagram-letters{
+    font-size: 15vw;
+    transform: translateY(20px);
+}
+}
